@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #f7f7f7;
+}
+a{
+    text-decoration: none;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: wheat;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-color: rgba(red, green, blue);
+}
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(red, green, blue);
+}
+nav h2 a{
+    padding-left: 40px;
+    font-size: 25px;
+    color: black;
+}
+nav h2 a:hover{
+    color: blueviolet;
+    transition: 0.5s;
+}
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 3em;
+}
+.menu li{
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    margin: 5px 20px;
+}
+.menu li a{
+    font-size: 20px;
+    color: black;
+}
+.menu li a:hover{
+    color: blue;
+    transition: 0.5s;
+}
+@media only screen and (max-width: 1025px) {
+    nav ul {
+        display: none;
+    }
+}
+
+.home{
+    text-align: center;
+    padding: 15em 0em 12em 0em;
+}
+.home div{
+    text-align: center;
+}
+.home h3{
+    font-size: 20px;
+}
+.home h1{
+    font-size: 55px;
+}
+.home h2{
+    font-size: 25px;
+}
+.aboutme {
+    margin-bottom: 2em;
+    padding: 3em 0em;
+}
+.aboutme h1{
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 2em;
+}
+.aboutme h1 i{
+    font-size: 40px;
+    color: black;
+}
+.aboutme .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 1140px;
+    max-width: 95%;
+}
+.aboutme div div{
+    margin-left: 100px;
+}
+.aboutme_img img{
+    margin-left: -7em;
+    width: 22em;
+    height: 27em;
+    border-radius: 20px;
+}
+.aboutme_details{
+    padding-left: -20em;
+}
+.aboutme_details h2{
+    font-weight: bold;
+}
+.aboutme_details h4{
+    padding-right: 10em;
+    font-size: 24px;
+    font-weight: lighter;
+    color: black;
+}
+.aboutme_contact {
+    display: grid;
+    grid-template-columns: [one] 30% [two] 50%;
+    font-size: 18px;
+    margin-bottom: 30px;
+    margin-right: -7em;
+}
+.aboutme_contact p {
+    color: blue;
+}
+.aboutme_contact p span{
+    color: black;
+    margin-left: 5px;
+}
+.aboutme_details a{
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: 20px solid dodgerblue;
+    background-color: dodgerblue;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+.aboutme_details a i{
+    font-size: 25px;
+}
+.aboutme_details a:hover{
+    color: black;
+    transition: 0.5s;
+}
+.Education {
+    padding: 20px;
+    background-color: blue;
+    color: white;
+}
+.Education h1{
+    text-align: center;
+    font-size: 35px;
+}
+.education ul{
+    margin-left: 15em;
+    margin-right: 10em;
+    padding: 20px 40px;
+    background-color: blue;
+    border-radius: 10px;
+}
+.contact {
+    padding: 20px;
+}
+.contact h1{
+    text-align: center;
+    font-size: 35px;
+}
+.contact div {
+    margin-left: -3em;
+    padding: 20px 40px;
+    background-color: rgb(red, green, blue);
+    border-radius: 20px;
+    display: flex;
+}
+.contact_image {
+    margin-right: 3em;
+}
+.contact_image img{
+    width: 29em;
+    height: 30em;
+    padding-left: 3em;
+}
+.contact_Input {
+    margin: 2px 5px;
+}
+.contact_Input i{
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.contact_Input input, 
+.contact_Input textarea {
+    width: 30em;
+    height: 40px;
+    font-size: 18px;
+    word-spacing: normal;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-indent: 50px;
+}
+.contact_Input textarea {
+    width: 29em;
+    height: 90px;
+    text-indent: 40px;
+    padding: 10px;
+}
+.contact_Submit {
+    text-align: right;
+}
+.contact_Submit i {
+    position: absolute;
+    margin-left: 20px;
+    margin-right: -45px;
+    font-size: 15px;
+    color: blue;
+}
+.contact_Submit input {
+    width: 8em;
+    height: 45px;
+    padding-right: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: dodgerblue;
+    color: white;
+    border: 1px solid dodgerblue;
+    border-radius: 8px;
+    cursor: pointer;
+}
+footer{
+    background-color: black;
+    width: 100%;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 1px;
+}
+.footercontent {
+    display: flex;
+    flex-direction: row;
+    flex: wrap;
+    padding-left: 8em;
+}
+.footercontent div{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.footer_About p{
+    margin-right: 5em;
+    color: rgb(red, green, blue);
+    font-size: 19px;
+}
+.footer_Links a {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 8px 0;
+    color: rgb(red, green, blue);
+    transition: 0.5s;
+}
+.footer_Links a:hover{
+    color: dodgerblue;
+    transition: 0.7s;
+}
+.footer_Contact p {
+    color: rgb(red, green, blue);
+    font-size: 19px;
+}
+.footer_Contact p {
+    color: blueviolet;
+    padding-right: 10px;
+}
+.footer_Contact div{
+    margin: 20px 0px;
+}
+.footer_Contact div a {
+    font-size: 18px;
+    padding: 10px;
+    margin: 5px;
+    color: black;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 50px;
+    transition: 0.7s;
+}
+.footer_Contact div a:hover{
+    background-color: transparent;
+    color: blueviolet;
+    transition: 0.7s;
+}
+footer p{
+    font-size: 19px;
+    text-align: center;
+    padding-top: 30px;
+}
+footer p i{
+    color: red;
+}
+footer p a {
+    color: blueviolet;
+    transition: 0.7s;
+}
+footer p a:hover{
+    color: white;
+    transition: 0.5s;
+}
